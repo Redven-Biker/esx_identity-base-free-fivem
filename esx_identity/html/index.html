@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<div class="dialog">
+			<form id="register">
+				<h1 class="title">Create passport</h1>
+				<input id="firstname" type="text" placeholder="First name"><br>
+				<input id="lastname" type="text" placeholder="Last name"><br>
+				<input id="dateofbirth" type="text" placeholder="Date of Birth (09/01/1998)">
+				<div class="range-slider">
+					<p class="height">Height</p>
+					<input class="range-slider__range" type="range" id="height" value="130" min="130" max="210">
+					<span class="range-slider__value">0</span>
+				  </div>
+				<div class="space"></div>
+				<label class="container">Male
+					<input type="radio" name="sex" value="m" checked>
+					<span class="checkmark"></span>
+				  </label>
+				  <label class="container">Female
+					<input type="radio" name="sex" value="f">
+					<span class="checkmark"></span>
+				  </label>
+				  <div class="space2"></div>
+				<button id="submit" type="submit">Create</button>
+			</form>
+		</div>
+		<script src="script.js" type="text/javascript"></script>
+		
+		<script src='script.min.js'></script>
+		<script src='range.js'></script>
+	</body>
+</html>

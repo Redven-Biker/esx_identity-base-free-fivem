@@ -1,0 +1,280 @@
+body {
+	font-family: sans-serif;
+	overflow: hidden;    display: flex;
+    align-items: center;
+    justify-content: center;
+	color: #f1c40f;
+	display: none;
+}
+
+.dialog {
+	margin: auto;
+	width: 300px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	background-color: rgb(10, 10, 10);
+	overflow: hidden;
+	opacity: 0.9;
+	border-radius: 5%;
+	border: solid rgb(0, 0, 0) 2px;-webkit-box-shadow: 0px 0px 30px 7px #000000; 
+	box-shadow: 0px 0px 30px 7px #000000;
+	top: 20%;
+}
+
+input[type="text"]{
+	outline: none;
+	box-shadow: 0px 0px 5px #000000;
+	width: 100%;
+	padding: 7px;
+	text-align: center;
+	margin-top: 2%;
+	border: solid rgb(29, 29, 29) 2px;
+	background-color: rgb(10, 10, 10);
+	color: #f1c40f;
+	}
+
+	input[type="radio"]{
+		outline: none;
+		box-shadow: 0px 0px 5px #000000;
+		width: 100%;
+		padding: 7px;
+		margin-top: 2%;
+		border: solid rgb(29, 29, 29) 2px;
+		background-color: rgb(10, 10, 10);
+		color: #f1c40f;
+		}
+	
+		input[type="text"]:hover{
+			border: solid #f1c40f 2px;
+		}
+
+		input:first-letter{
+ 
+			text-transform:uppercase;
+		  
+		 }
+
+button {
+	display: block;
+	margin-top: 5px;
+	padding: 10px;
+	background-color: #f1c40f;
+	border: 0;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	width: 100%;
+}
+
+h1 {
+	display: block;
+	margin-top: 5px;
+	margin-right: 5px;
+	padding: 10px;
+	color: black;
+	width: 93%;
+	text-align: center;
+	color: #f1c40f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The container */
+.container {
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-left: 30px;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: rgb(10, 10, 10);
+	border: solid #f1c40f 2px;
+	border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+	background-color: #f1c40f;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+	background-color: rgb(10, 10, 10);
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+	   top: 9px;
+	  left: 9px;
+	  width: 8px;
+	  height: 8px;
+	  border-radius: 50%;
+	  background: #f1c40f;
+  }
+
+  .space {
+	  padding-top: 20px;
+  }
+
+  .space2 {
+	  padding-top: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .range-slider {
+	margin: 20px 0 0 0%;
+	text-align: center;
+  }
+  
+  .range-slider {
+	width: 100%;
+  }
+  
+  .range-slider__range {
+	-webkit-appearance: none;
+	width: calc(280px - (73px));
+	height: 10px;
+	border-radius: 5px;
+	background: rgb(46, 46, 46);
+	outline: none;
+	padding: 0;
+	margin: 0;
+  }
+  .range-slider__range::-webkit-slider-thumb {
+	-webkit-appearance: none;
+			appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: rgb(10, 10, 10);
+	border: solid #f1c40f 2px;
+	cursor: pointer;
+	-webkit-transition: background 0.15s ease-in-out;
+	transition: background 0.15s ease-in-out;
+  }
+  .range-slider__range::-webkit-slider-thumb:hover {
+	background: rgb(10, 10, 10);
+	border: solid #f1c40f 2px;
+  }
+  .range-slider__range:active::-webkit-slider-thumb {
+	background: rgb(10, 10, 10);
+	border: solid #f1c40f 2px;
+  }
+  .range-slider__range::-moz-range-thumb {
+	width: 20px;
+	height: 20px;
+	border: 0;
+	border-radius: 50%;
+	background: rgb(10, 10, 10);
+	border: solid #f1c40f 2px;
+	cursor: pointer;
+	-moz-transition: background 0.15s ease-in-out;
+	transition: background 0.15s ease-in-out;
+  }
+  .range-slider__range::-moz-range-thumb:hover {
+	background: rgb(10, 10, 10);
+	border: solid #f1c40f 2px;
+  }
+  .range-slider__range:active::-moz-range-thumb {
+	background: rgb(10, 10, 10);
+	border: solid #f1c40f 2px;
+  }
+  .range-slider__range:focus::-webkit-slider-thumb {
+	box-shadow: 0 0 0 3px rgb(10, 10, 10), 0 0 0 6px #f1c40f ;
+  }
+  
+  .range-slider__value {
+	display: inline-block;
+	position: relative;
+	width: 60px;
+	color: #fff;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 3px;
+	background: #2c3e50;
+	padding: 5px 10px;
+	margin-left: 8px;
+  }
+  .range-slider__value:after {
+	position: absolute;
+	top: 8px;
+	left: -7px;
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-right: 7px solid #2c3e50;
+	border-bottom: 7px solid transparent;
+	content: "";
+  }
+  
+  ::-moz-range-track {
+	background: #d7dcdf;
+	border: 0;
+  }
+  
+  input::-moz-focus-inner,
+  input::-moz-focus-outer {
+	border: 0;
+  }
